@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Section styles */
+.season-section {
+    height: 100vh;
+    padding: 4em 2em;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1em;
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
+    margin: 0.5em;
+    transition: transform 0.3s ease, z-index 0s;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
