@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -5,11 +6,12 @@ body {
     box-sizing: border-box;
     color: #333;
     background-color: #f5f5f5;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Header styles */
 header {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -18,7 +20,7 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 header h1 {
@@ -44,21 +46,24 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
-    padding: 0.5em 1em;
-    border-radius: 5px;
+    padding: 0.5em 1em; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Hover effect with background color change and border */
 nav ul li a[data-color] {
-    background-color: transparent;
+    background-color: transparent; /* Background color should be transparent by default */
 }
 
 nav ul li a:hover {
-    color: #ffffff;
-    background-color: currentColor;
-    border: 2px solid currentColor;
+    color: #ffffff; /* White text color on hover */
+    background-color: currentColor; /* Background color to match text color */
+    border: 2px solid currentColor; /* Border color to match text color */
+}
 
+/* Section styles */
 .season-section {
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure sections are at least full viewport height */
     padding: 4em 2em;
     text-align: center;
     color: white;
@@ -67,17 +72,17 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: #ffffff;
-    transition: background-color 0.3s ease;
+    background: #ffffff; /* Default background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-
+/* Image container styles */
 .image-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow images to wrap if they overflow */
     justify-content: center; 
-    gap: 1em; 
-    margin-top: 2em;
+    gap: 1em; /* Space between images */
+    margin-top: 2em; /* Space between text and images */
 }
 
 .image-container img {
@@ -91,6 +96,7 @@ nav ul li a:hover {
     z-index: 10;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: white;
@@ -101,7 +107,7 @@ footer {
     width: 100%;
 }
 
-
+/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
